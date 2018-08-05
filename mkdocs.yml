@@ -3,4 +3,5 @@ nav:
     - 'Index': 'index.md'
     - 'Notes Service': 'notes_service.md'
     - 'KarmaCounter': 'karmacounter.md'
+theme: readthedocs
 
