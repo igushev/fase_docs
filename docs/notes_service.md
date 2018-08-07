@@ -10,7 +10,7 @@
 
 # Details
 
-Notes Service is implemented using Fase and has synchronizes context out of the box. Below is single Python file with
+Notes Service is implemented using Fase and has synchronized context out of the box. Below is single Python file with
 less then **250 lines** of code which implements Notes Services with 100% code reuse for iOS and Android platforms.
 
 # Source Code

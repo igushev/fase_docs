@@ -3,6 +3,9 @@ site_url: http://fase.io/
 copyright: 2018 Fase &trade;
 nav:
     - 'Index': 'index.md'
+    - 'Platforms and Languages': 'roadmap.md'
+    - 'Monetization': 'monetization.md'
+    - 'Example: Hello World': 'hello_world.md'
     - 'Example: Notes Service': 'notes_service.md'
     - 'Example: KarmaCounter': 'karmacounter.md'
     - 'Documentation': 'documentation.md'
