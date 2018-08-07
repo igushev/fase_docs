@@ -1,0 +1,1 @@
+To download Fase please contact us by <a href='mailto:fase.io.info@gmail.com'>fase.io.info@gmail.com</a>.
