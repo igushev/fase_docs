@@ -2,38 +2,35 @@ Welcome to Fase!
 
 # Frontend as a Service
 
-Fase is Frontend as a Service and changes not just frontend development process but typical Web Application
-architecture;
+Fase is Frontend as a Service (FaaS) and change not just frontend development process but typical Application
+architecture.
 
-Web Application Developer need to implement _one_ frontend using Fase API and SDK, then run the frontend on Fase FaaS,
-which then will be rendered on _multiple_ platforms using propertirely technology.
+Application Developer need to implement _one_ frontend using Fase, then run the frontend on Fase FaaS, which then can be
+rendered on _multiple_ platforms using propertirely technology.
 
-# Web Application Developer Benefits
+# Demo
+
+<iframe src="https://www.youtube.com/embed/lidLeRoMqNQ" width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
+
+# Application Developer Benefits
 
   * Develop only _one_ frontend;
+  * Options of _one_ development language for all platforms;
   * Presence on _all_ popular and not popular _platforms_;
-  * Options of _one_ development language for all platforms.
-  * Instant Web Application update across all devices;
+  * Instant Application update across all devices;
+
+## Coming
+
+  * A/B testing for the Application;
 
 # End User Benefits
 
   * Each apps state is preserved (even if the device has restarted);
   * Freedom of platform choice (favourite apps on all platforms);
-  * Unified login to all Web Applications;
+  * Unified login to all Applications;
 
-# Future Features for Web Application Developers
+## Coming
 
-  * A/B testing for the Web Application;
-  * Analytics for the Web Application;
-  * Easy access to regular cloud computing though built-in APIs;
-
-# Future Features End Users
-
-  * AI-powered assistant which predicts user’s next move within Web Application;
-  * Information can be indexed and searched;
   * Automatic form filling (name, credit cards, etc.);
-  * Collaboration with other users within same Web Application;
-
-# Demo
-
-<iframe src="https://www.youtube.com/embed/lidLeRoMqNQ" width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
+  * **AI-powered assistant** which predicts user’s next move within Application;
+  * Personal information can be searched across Applications;

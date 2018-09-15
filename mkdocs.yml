@@ -8,8 +8,8 @@ nav:
     - 'Example: Hello World': 'hello_world.md'
     - 'Example: Notes Service': 'notes_service.md'
     - 'Example: KarmaCounter': 'karmacounter.md'
+    - 'Client: Planner': 'planner.md'
     - 'Documentation': 'documentation.md'
     - 'Download': 'download.md'
     - 'Contact Us': 'contact_us.md'
 theme: readthedocs
-
