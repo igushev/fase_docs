@@ -25,7 +25,8 @@ rendered on _multiple_ platforms using propertirely technology.
 
 # End User Benefits
 
-  * Each apps state is preserved (even if the device has restarted);
+  * Each Application state is preserved (even if the device has restarted);
+  * Synchronization across devices for each Application;
   * Freedom of platform choice (favourite apps on all platforms);
   * Unified login to all Applications;
 
