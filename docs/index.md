@@ -2,7 +2,7 @@ Welcome to Fase!
 
 # Frontend as a Service
 
-Fase is Frontend as a Service (FaaS) and change not just frontend development process but typical Application
+Fase is Frontend as a Service (FaaS) and changes not just frontend development process but typical Application
 architecture.
 
 Application Developer need to implement _one_ frontend using Fase, then run the frontend on Fase FaaS, which then can be
