@@ -4,11 +4,10 @@ copyright: 2018 Fase &trade;
 nav:
     - 'Index': 'index.md'
     - 'Platforms and Languages': 'roadmap.md'
-    - 'Monetization': 'monetization.md'
     - 'Example: Hello World': 'hello_world.md'
     - 'Example: Notes Service': 'notes_service.md'
     - 'Example: KarmaCounter': 'karmacounter.md'
-    - 'Client: Planner': 'planner.md'
+    - 'Example: Planner': 'planner.md'
     - 'Documentation': 'documentation.md'
     - 'Download': 'download.md'
     - 'Contact Us': 'contact_us.md'

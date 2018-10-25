@@ -1,4 +1,4 @@
-Platforms and Languages are decoupled. Web Application Developer choose _one_ language for _all_ platforms. 
+Platforms and Languages are decoupled. Choose _one_ language for _all_ platforms. 
 
 # Platforms
 
@@ -10,6 +10,7 @@ Platforms and Languages are decoupled. Web Application Developer choose _one_ la
 ## Coming
 
   * Windows Phone;
+  * Tizen;
   * Web Browser;
 
 # Languages
@@ -23,4 +24,3 @@ Platforms and Languages are decoupled. Web Application Developer choose _one_ la
   * C++;
   * Java;
   * PHP;
-  * JavaScript;
