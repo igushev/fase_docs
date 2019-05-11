@@ -294,16 +294,16 @@ Table of Contents
 |Prev button|Button in the left upper corner|Built in system back button||
 
 ## Abstract Elements on iOS
-![Abstract Elements on iOS](images/ios.png "Abstract Elements on iOS")
+![Abstract Elements on iOS](images/elements/ios.png "Abstract Elements on iOS")
 
 ## Abstract Elements on Android
-![Abstract Elements on Android](images/android.png "Abstract Elements on Android")
+![Abstract Elements on Android](images/elements/android.png "Abstract Elements on Android")
 
 ## Screen
-![Screen](images/fase_screen.png "Screen")
+![Screen](images/elements/fase_screen.png "Screen")
 
 ## Layout Vertical
-![Layout Vertical](images/fase_layout_vertical.png "Layout Vertical")
+![Layout Vertical](images/elements/fase_layout_vertical.png "Layout Vertical")
 
 ## Layout Horizontal
-![Layout Horizontal](images/fase_layout_horizontal.png "Layout Horizontal")
+![Layout Horizontal](images/elements/fase_layout_horizontal.png "Layout Horizontal")

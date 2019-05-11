@@ -1,12 +1,12 @@
 **KarmaCounter** is social messaging application which allows to track your karma score, send and receive “karma” points to and from friends.
 
-<img alt='KarmaCounter' src='../images/KC - square - 1024x1024 - resized.png' width='128' height='128'>
+<img alt='KarmaCounter' src='../images/examples/KC - square - 1024x1024 - resized.png' width='128' height='128'>
 
 # Download
 
-<a href='https://itunes.apple.com/us/app/karmacounter/id1242742105?ls=1&mt=8'><img alt='Download on the App Store' src='../images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width='180' height='60'></a>
+<a href='https://itunes.apple.com/us/app/karmacounter/id1242742105?ls=1&mt=8'><img alt='Download on the App Store' src='../images/examples/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width='180' height='60'></a>
 
-<a href='https://play.google.com/store/apps/details?id=com.karmacounter'><img alt='Get it on Google Play' src='../images/google-play-badge.png'/ width='180' height='60'></a>
+<a href='https://play.google.com/store/apps/details?id=com.karmacounter'><img alt='Get it on Google Play' src='../images/examples/google-play-badge.png'/ width='180' height='60'></a>
 
 # Description
 
