@@ -7,7 +7,6 @@ nav:
     - 'Example: Hello World': 'hello_world.md'
     - 'Example: Notes Service': 'notes_service.md'
     - 'Example: KarmaCounter': 'karmacounter.md'
-    - 'Example: Planner': 'planner.md'
     - 'Documentation': 'documentation.md'
     - 'Internal: Communication with Server': 'server_communication.md'
     - 'Download': 'download.md'
