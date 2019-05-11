@@ -35,10 +35,10 @@ fase.Service.RegisterService(HelloWorldService)
 
 ## iOS
 
-<img alt='Hello World Initial' src='../images/ios_hello_world/initial.png' width='300' height='533'>
-<img alt='Hello World Hello' src='../images/ios_hello_world/greeting.png' width='300' height='533'>
+<img alt='Hello World Initial' src='../images/hello_world_ios/initial.png' width='300' height='533'>
+<img alt='Hello World Hello' src='../images/hello_world_ios/greeting.png' width='300' height='533'>
 
 ## Android
 
-<img alt='Hello World Initial' src='../images/android_hello_world/initial.png' width='300' height='533'>
-<img alt='Hello World Hello' src='../images/android_hello_world/greeting.png' width='300' height='533'>
+<img alt='Hello World Initial' src='../images/hello_world_android/initial.png' width='300' height='533'>
+<img alt='Hello World Hello' src='../images/hello_world_android/greeting.png' width='300' height='533'>
