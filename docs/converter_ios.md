@@ -1,7 +1,5 @@
 # Create iOS Application
-  * Create directory `converter`;
-  * Download `fase_ios` repository from [here](https://github.com/igushev/fase_ios) into `converter` directory so
-  `fase_ios` locate as `converter/fase_ios`;
+  * Download `fase_ios` repository from [here](https://github.com/igushev/fase_ios);
   * Launch XCode;
   * Click on *Fase_iOS*;
   * Change *Display Name* to *Converter* (see picture below);
@@ -18,7 +16,7 @@
   * Click on *Fase_iOS*. In *App Icons Source* add icons;
   * Set *Fase_iOS* as active scheme, click *Build and Run*;
   
-If you have a connected iPhone, Application should start:
+If you have a connected iPhone, Application should run:
 <img alt='Converter iOS Launch' src='../images/converter_ios/converter_ios_launch.png'>
   
   
