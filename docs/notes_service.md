@@ -2,6 +2,10 @@
 
 <img alt='Notes Service' src='../images/examples/notes_color_16_00.png' width='128' height='128'>
 
+# GitHub Repository
+
+<a href='https://github.com/igushev/notes_fase'><img alt='Notes Service GitHub Repository' src='../images/examples/GitHub-Mark-120px-plus.png' width='120' height='120'></a>
+
 # Download
 
 <a href='https://itunes.apple.com/us/app/notes-service/id1406678770?ls=1&mt=8'><img alt='Download on the App Store' src='../images/examples/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width='180' height='60'></a>
