@@ -1,18 +1,17 @@
 site_name: Fase
 site_url: http://fase.io/
-copyright: 2018 Fase &trade;
+copyright: 2018 Fase &trade;. Built in Palo Alto, Silicon Valley, CA, USA.
 nav:
     - 'Index': 'index.md'
     - 'Platforms and Languages': 'roadmap.md'
     - 'Example: Hello World': 'hello_world.md'
-    - 'Example: Notes Service': 'notes_service.md'
-    - 'Example: KarmaCounter': 'karmacounter.md'
     - 'Documentation': 'documentation.md'
     - 'Instructions: Service': 'converter_service.md'
     - 'Instructions: Server': 'converter_server.md'
     - 'Instructions: iOS': 'converter_ios.md'
     - 'Instructions: Android': 'converter_android.md'
+    - 'Example: Notes Service': 'notes_service.md'
+    - 'Example: KarmaCounter': 'karmacounter.md'
     - 'Internal: Communication with Server': 'server_communication.md'
-    - 'Download': 'download.md'
     - 'Contact Us': 'contact_us.md'
 theme: readthedocs

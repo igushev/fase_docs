@@ -9,9 +9,8 @@ Platforms and Languages are decoupled. Choose _one_ language for _all_ platforms
     
 ## Coming
 
-  * Windows Phone;
-  * Tizen;
   * Web Browser;
+  * Tizen;
 
 # Languages
 
@@ -24,3 +23,5 @@ Platforms and Languages are decoupled. Choose _one_ language for _all_ platforms
   * C++;
   * Java;
   * PHP;
+  * Go;
+  * JavaScript;
