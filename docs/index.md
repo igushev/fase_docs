@@ -2,7 +2,7 @@ Welcome to Fase!
 
 # Frontend in the Cloud - 5G Ready
 
-  * Singular frontend which is rendered on _all_ platforms with **native components** using proprietarily technology;
+  * Singular frontend which is rendered on _all_ platforms with **native components**;
   * Running frontend in the cloud allows to synchronize not only data, but entire context and provide synchronized and seamless user experience;
   * Advanced app management (instant updates, support of A/B testing);
   * **Free** and **Open Source**;
