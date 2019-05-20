@@ -1,11 +1,12 @@
 # Create Application
 
-  * Create directory `converter` using command `mkdir converter`;
-  * Download `fase_lib` repository from [here](https://github.com/igushev/fase_lib) into `converter` directory so
+  * **Create working directory.** Create directory `converter` using command `mkdir converter`;
+  * **Download Fase Library.** Download `fase_lib` repository from [here](https://github.com/igushev/fase_lib) into `converter` directory so
   `fase_lib` locate as `converter/fase_lib`;
-  * Move written file `service.py` into `converter` directory;
-  * Create file `application.py`;
-  * Import main Fase modules, register `ConverterService`, configurate Fase and refer `application` variable:
+  * **Define Service.** Move written file `service.py` into `converter` directory;
+  * **Create entry point:**
+    * Create file `application.py`;
+    * Import main Fase modules, register `ConverterService`, configurate Fase and refer `application` variable:
 
 ```
 import os
@@ -34,8 +35,9 @@ Beanstalk.
 
 # Optionally. Run Server and Application Locally
 
-  * Create file `run_locally.py`;
-  * Import Fase tool to run Application using Python Tkinter, register service and run Server and Application locally:
+  * **Create runner:**
+    * Create file `run_locally.py`;
+    * Import Fase tool to run Application using Python Tkinter, register service and run Server and Application locally:
 
 ```
 import os
@@ -60,23 +62,26 @@ if __name__ == '__main__':
   main(os.sys.argv)
 ```
 
-  * Run Application locally using command `python3 run_locally.py`;
+  * **Run.** Run Server and Application locally using command `python3 run_locally.py`;
 
 # Prepare Archive with Source Code
 
 **NOTE.** Fase Server can work with set of tables with different suffixes. This allows to deploy several instances, for
-example for production and testing. This instruction describes how to deploy tables with _prod suffix.
+example for production and testing. This instruction describes how to deploy tables with *_prod* suffix.
 
-  * Copy `requirements.txt` from `fase_lib` directory using command `cp fase_lib/requirements.txt ./`;
-  * A config file for Fase Server needs to be created. As template copy file
+  * **Define requirements.** A file `requirements.txt` which lists all libraries needed to run an environment is
+  needed. As template Copy `requirements.txt` from `fase_lib` directory using command
+  `cp fase_lib/requirements.txt ./`. Add libraries which Service needs apart from that.
+  * **Define Fase config.** A config file for Fase Server is needed. As template copy file
   [prod_fase.config](https://github.com/igushev/fase_lib/blob/master/tools/prod_fase.config) into `converter`
   directory using command `cp fase_lib/tools/prod_fase.config ./`;
-  * Archive the source using command `zip -r Converter.zip *`;
+  * **Create archive.** Archive the source using command `zip -r Converter.zip *`;
   
 # Configurate Permissions
 
-  * Create policy for Fase Server to access DynamoDB: go to *Services*->*IAM*, go to *Policies*, click *Create policy*,
-  select *JSON*. Copy content of file
+  * **Log in into AWS.**
+  * **Create policy for Fase Server to access DynamoDB.** Go to *Services*->*IAM*, go to *Policies*,
+  click *Create policy*, select *JSON*, copy content of file
   [dynamo_db_policy_prod.json](https://github.com/igushev/fase_lib/blob/master/tools/dynamo_db_policy_prod.json),
   click *Review policy*, enter name *FaseDynamoDBPolicyProd*, click *Create policy*;
 
@@ -84,14 +89,16 @@ example for production and testing. This instruction describes how to deploy tab
 [generate_dynamo_db_policy.py](https://github.com/igushev/fase_lib/blob/master/tools/generate_dynamo_db_policy.py)
 allows to generate such policy with any suffix.
 
-  * In case an Application uses signing in functionality, create policy for Fase Server to send SMS: go to
-  *Services*->*IAM*, go to *Policies*, click *Create policy*, select *JSON*. Copy content of file
+  * **Create policy for Fase Server to send SMS if needed.** In case of an Application uses signing in functionality,
+  create policy for Fase Server to send SMS. Go to *Services*->*IAM*, go to *Policies*, click *Create policy*,
+  select *JSON*, copy content of file
   [sns_policy.json](https://github.com/igushev/fase_lib/blob/master/tools/sns_policy.json), click *Review policy*,
   enter name *FaseSNSPolicy*, click *Create policy*;
 
-  * Go to *Services*->*IAM*, go to *Roles*, click *Create role*, choose *AWS service*, choose *EC2*,
-  click *Next: Permissions*. In policies list find and add *FaseDynamoDBPolicyProd* and, if created, *FaseSNSPolicy*.
-  Click *Next: Tags*, click *Next: Review*, as *Role name* enter *ConverterFaseProd*, click *Create role*;
+  * **Create role with policies.** Go to *Services*->*IAM*, go to *Roles*, click *Create role*, choose *AWS service*,
+  choose *EC2*, click *Next: Permissions*. In policies list find and add *FaseDynamoDBPolicyProd* and, if created,
+  *FaseSNSPolicy*. Click *Next: Tags*, click *Next: Review*, as *Role name* enter *ConverterFaseProd*, click
+  *Create role*;
 
 # Deploy Server
 
@@ -99,24 +106,22 @@ allows to generate such policy with any suffix.
   enter *ConverterFase*, click *Create*;
   <img alt='Create Application' src='../images/converter_server/create_application.png'>
   
-  * Above just create Application, click *Actions*, choose *Create environment*, choose *Web server environment*,
+  * **Create Server.** Above just create Application, click *Actions*, choose *Create environment*, choose *Web server environment*,
   click *Select*. As *Environment name* enter *converterfase-env-prod*, copy it to domain, for *Preconfigured platform*
   choose *Python*, for *Application code* choose *Upload your code* and find archive created above, click
-  *Create environment* and wait until environment is created;
+  *Create environment* and wait until environment is created; Choose just created *converterfase-env-prod*;
   
-  * Choose just created *converterfase-env-prod*;
-  
-  * Go to *Configuration*->*Security*, as *IAM instance profile* choose *ConverterFaseProd*, click *Apply*,
-  click *Confirm*;
+  * **Assign created role.** Go to *Configuration*->*Security*, as *IAM instance profile* choose *ConverterFaseProd*,
+  click *Apply*, click *Confirm*;
   <img alt='Modify Security' src='../images/converter_server/modify_security.png'>
   
-  * Go to *Configuration*->*Software*, for *Environment properties* as *Name* and *Value* add
-  `FASE_CONFIG_FILENAME` and `prod_fase.config`, click *Apply*;
+  * **Define environment variable with Fase config.** Go to *Configuration*->*Software*, for *Environment properties*
+  as *Name* and *Value* add `FASE_CONFIG_FILENAME` and `prod_fase.config`, click *Apply*;
   <img alt='Environment Properties' src='../images/converter_server/environment_properties.png'>
 
 # Create Database
 
-  * Using software like *Postman* send *POST* request to URL
+  * **Send command to create tables.** Using software like *Postman* send *POST* request to URL
   `converterfase-env-prod.us-west-2.elasticbeanstalk.com/sendinternalcommand` with following body:
 
 ```
@@ -125,17 +130,18 @@ allows to generate such policy with any suffix.
 }
 ```
 
-  Reponse with code 200 should be received. This request creates database for Fase server.
+  Reponse with code 200 should be received. This request creates database for Fase Server.
 
-  * **Check that tables have been created successfully.** Go *Services*->*DynamoDB*, go to *Tables* and make sure that
+  * **Confirm that tables have been created successfully.** Go *Services*->*DynamoDB*, go to *Tables* and make sure that
   tables with prefix *fase_* have been created;
   <img alt='DynamoDB' src='../images/converter_server/dynamo_db.png'>
   
 
 # Optionally. Connect to Server and run Application Locally
 
-  * Create file `run_connect.py`;
-  * Import Fase tool to run Application using Python Tkinter, register service and connect to Server and run
+  * **Create runner:**
+    * Create file `run_connect.py`;
+    * Import Fase tool to run Application using Python Tkinter, register service and connect to Server and run
   Application locally:
 
 ```
@@ -157,6 +163,8 @@ def main(argv):
 if __name__ == '__main__':
   main(os.sys.argv)
 ```
+
+  * **Run.** Connect to Server and run Application locally using command `python3 run_locally.py`;
 
 An initial screen should be seen. That means Fase Server has been deployed correctly.
 <img alt='Converter Remote' src='../images/converter_server/converter_remote.png'>

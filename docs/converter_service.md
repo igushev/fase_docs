@@ -1,6 +1,7 @@
 # Create Service
   * Create file `service.py`;
-  * Import `fase` module with Fase Elements and define `ConverterService` as child of `fase.Service`;
+  * Import `fase` module with Fase Elements;
+  * Define `ConverterService` as child of `fase.Service`;
   * Create method `OnStart(self)` and the rest of the Application:
 
 ```
