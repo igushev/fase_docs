@@ -15,3 +15,6 @@ nav:
     - 'Internal: Communication with Server': 'server_communication.md'
     - 'Contact Us': 'contact_us.md'
 theme: readthedocs
+google_analytics:
+  - UA-140485396-1
+  - auto
