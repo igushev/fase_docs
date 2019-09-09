@@ -8,6 +8,10 @@ Welcome to Fase!
   * **Free** and **Open Source**;
   * Used by **thousands of Applications**;
 
+# Article
+
+Article on Medium about Fase is [here](https://medium.com/@igushev/frontend-in-the-cloud-creating-native-mobile-applications-on-python-free-and-open-source-5g-15b34d956036).
+
 # Demo
 
 <iframe src="https://www.youtube.com/embed/hb64nMG7QWY" width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
